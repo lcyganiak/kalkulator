@@ -1,0 +1,46 @@
+.section-buttons {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.section-buttons .btn {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.section-buttons .btn-1 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+}
+
+.section-buttons .btn-2 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+#result-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
