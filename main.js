@@ -119,3 +119,110 @@ console.log('dzielę 0 przez 4', dzielenie4)
         jakieToImie = "Tak to jest " + imie
      }
  }
+
+
+ // lukasz.c@com.pl
+ // lUkasz.c@com.pl
+
+ // Warszawa i warszawa
+
+
+
+ // działania na string
+
+ //toUpperCase()
+
+ const imie = "jan"
+
+ const imieZDuzej = imie.toUpperCase()
+ console.log(imieZDuzej)
+
+ // toLowerCase() wsztkow w stringu z małej litery
+ const nazwisko = "NOWAK"
+ const nazwiskoZMałejLitery = nazwisko.toLowerCase()
+const item1 = "Warszawa"
+const item2 = "warszawa"
+
+console.log(item1.toLowerCase() === item2.toLowerCase())
+
+const art = 'Jego brat przez wiele lat był gwiazdą NBA, jest wrogiem publicznym w Turcji, a on świetnie sobie radzi w polskiej lidze.'
+// search 
+// ['J','e','g']
+const isNBA = art.search('NBA')
+console.log(isNBA) // wynik 38
+const isNFL = art.search('NFL')
+console.log(isNFL) // wynik -1
+// includes 
+const isTurcji = art.includes('Turcji')  // includes zwraca true lub false
+console.log(isTurcji)
+
+
+
+const email = 'lukasz@com.pl'
+const email2 = '@lukasz.com.pl'
+const email2Dlugosc = email2.length // zwraca ilośc ilośc znaków 
+// w stringu
+console.log(email2Dlugosc)
+if(email2.search('@') > 0 && email2.search('@') < email2Dlugosc - 1) {
+    // tylko wejdzie w ta cześć kodu kiedy emila nie będzie miał @ na poczatku i koncu
+}
+
+// split() 
+
+const artSplit = art.split(' ') // zwraca tablicę [ "Jego", "brat", "przez", "wiele", "lat", "był", "gwiazdą", "NBA,", "jest", "wrogiem", … ]
+console.log(artSplit)
+
+const artSplit2 = art.split('') 
+console.log(artSplit2)
+
+
+
+// slice()
+
+const artSlice = art.slice(100) // zwróci zi w polskiej lidze. czyli od 100 znaku 
+console.log(artSlice)
+const artSlice2 = art.slice(0, 40) // zwróci od pierwszego do 40 znaku w tekście 
+console.log(artSlice2)
+
+// trim()
+const textZeSpacjami = '                Jan Nowak                   '
+console.log(textZeSpacjami)
+const textBezSpacji = textZeSpacjami.trim()
+console.log(textBezSpacji)
+
+// repeat()
+
+const someText = "Łukasz jest "
+const textRepeat = "Słabym trenerem "
+
+const textZpowielonąWartoscia = someText + textRepeat.repeat(25)
+
+console.log(textZpowielonąWartoscia)
+
+// concat 
+const nowyText = someText.concat('+++++++++', textRepeat)
+console.log(nowyText)
+
+
+// 1. Sprawdz czy szukan fraza jest w tekście. 3 dowolne frazy. Sprawdzanie zamknij w funkcji z parametrem 
+
+
+function szukaj(parametr) {
+// napisz fukcje szukająća padanej frazy , z uwzględnieniem małych i duzych liter
+}
+
+// const czyJestWhen = szukaj('When')
+// const czyJestAre = szukaj("are") *// ARE, Are, aRe
+
+//2. Dowlony text podzle na 2 połówki. 
+// np. 
+function rozdziel(parametr) {
+    // zwracam objekt
+}
+
+// 3. Zamieni w tekscie dowalny wyraz na SDA 
+// np. mam tekst "Kocham poniedziałek"
+// zaminiam na Kocham SDA 
+function zmina(parametr) {
+    // replace
+}
